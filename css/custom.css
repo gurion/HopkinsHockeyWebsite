@@ -1,0 +1,65 @@
+body {
+  padding-top: 65px;
+	background: #E5E2E0
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+nav {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.carousel-item {
+  width: 100%;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-inner {
+  width:100%;
+	height: .5625 * width;
+}
+
+.navbar-custom {
+    background-color: #005EB8;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #005EB8;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.footer {
+	background: #4A484C
+}
+
+.footer-text {
+	color: #7E7E7C
+}
+
+.footer a {
+  color: #418FDE;
+  font-size: 25px;
+  padding: 7.5px;
+  transition: all .5s ease;
+}
+
+.footer a:hover {
+  color: white;
+}

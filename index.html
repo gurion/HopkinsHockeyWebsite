@@ -10,51 +10,18 @@
 
     <title>Johns Hopkins Hockey</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/homepage.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body id="home">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-					<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-					Johns Hopkins Hockey
-				</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="roster.html">Roster</a>
-            </li>
-						<li class="nav-item">
-              <a class="nav-link" href="stats.html">Stats</a>
-            </li>
-						<li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-						<li class="nav-item">
-              <a class="nav-link" href="alumni.html">Alumni</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<div id="nav-placeholder">
+		</div>
 
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -100,22 +67,30 @@
     <!-- Page Content -->
     <section class="py-5">
       <div class="container">
-        <h1>Welcome to Johns Hopkins Hockey</h1>
+        <h1><img src="img/logo.png" width=50px height=50px />Welcome to Johns Hopkins Hockey</h1>
         <p></p>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Gurion Marks 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+		<div id="footer-placeholder">
+		</div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<script>
+		$(function(){
+			$("#nav-placeholder").load("nav.html");
+		});
+		</script>
+
+		<script>
+		$(function(){
+			$("#footer-placeholder").load("footer.html");
+		});
+		</script>
 
   </body>
 
