@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
+
+	<title>Johns Hopkins Hockey - Schedule</title>
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<div id="nav-placeholder">
+	</div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<section id="games" class="content-section">
+			<h1 class="my-3">2018-2019 Game Schedule</h1>
+			<div id="game-placeholder"></div>
+		</section>
+
+		<hr>
+		<section id="practice" class="content-section">
+			<h1 class="my-3">2018-2019 Practice Schedule</h1>
+			<div id="practice-placeholder"></div>
+		</section>
+
+		<hr>
+
+		<section id="rinks" class="content-section">
+			<div class="container">
+				<h1 class="my-3">Rinks</h1>
+				<h3>Mt. Pleasant Ice Arena</h3>
+				<p>Home Games and Practices</p>
+				<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12337.77237585306!2d-76.577778!3d39.3688464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf19f1a4cbadc66!2sMt+Pleasant+Ice+Arena!5e0!3m2!1sen!2sus!4v1544810891061"></iframe>
+				<h3>Reisterstown Sportsplex</h3>
+				<p>Home Games</p>
+				<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.8585350131493!2d-76.84634318409239!3d39.47252447948604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c83de1e93c4be9%3A0x22a27f786994b3f4!2sReisterstown+Sportsplex!5e0!3m2!1sen!2sus!4v1546656320790"></iframe>
+				<h3>Ice World Abington</h3>
+				<p>Home Games</p>
+				<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.0121679200247!2d-76.2931276840929!3d39.44645697948971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7e636f07830d3%3A0xd3a904261a07685f!2sIce+World!5e0!3m2!1sen!2sus!4v1546656662849"></iframe>
+				<h3>Patterson Park</h3>
+				<p>Practices</p>
+				<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.9720110204667!2d-76.57946358409643!3d39.28888527951221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80473f977f3f7%3A0xba1512f60a8ea4bc!2sMimi+DiPietro+Family+Skating+Center!5e0!3m2!1sen!2sus!4v1546656741690"></iframe>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer-placeholder">
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		$(function() {
+			$("#nav-placeholder").load("nav.html");
+			$("#footer-placeholder").load("footer.html");
+			$("#game-placeholder").load("game_schedule.html");
+			$("#practice-placeholder").load("practice_schedule.html");
+		});
+	</script>
+
+</body>
+
+</html>
