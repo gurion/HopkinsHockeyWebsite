@@ -85,6 +85,16 @@ p {
   border: 0;
 }
 
+.win {
+  background: rgba(116, 170, 80, 0.4);
+  font-weight: bold;
+}
+
+.loss {
+	background: rgba(224, 60, 49, 0.4);
+	font-weight: bold;
+}
+
 .container.gallery-container {
   color: #35373a;
   min-height: 100vh;
@@ -146,7 +156,7 @@ p {
 }
 
 .ekko-lightbox-nav-overlay {
-	color: #B4B2AD;
+  color: #B4B2AD;
   z-index: 1;
   position: absolute;
   top: 0;
