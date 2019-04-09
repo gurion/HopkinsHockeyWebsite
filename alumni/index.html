@@ -18,7 +18,7 @@
 	<link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
 
-	<title>Johns Hopkins Hockey - Roster</title>
+	<title>Johns Hopkins Hockey - Alumni</title>
 
 </head>
 
@@ -30,22 +30,20 @@
 
 	<!-- Page Content -->
 	<div class="container">
-		<h1 class="my-3">Roster</h1>
-		<p>The 2018-19 Team</p>
+		<h1 class="my-3">Alumni</h1>
 
-		<!-- <div class="row">
-        <div class="col-lg-12">
-          <h2 class="my-4">Our Team</h2>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
-            <small>Job Title</small>
-          </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-			</div> -->
-		<div id="roster-placeholder">
+		<hr>
+
+		<h3>Alumni Game</h3>
+		<iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSckhWbql1kbGgYGqrwU4r0XFG_vPjNlaxV7CTUtJ-yhpUDD6A/viewform?embedded=true"></iframe>
+
+		<hr>
+
+		<h3>Alumni Roster</h3>
+		<p>Below you will find names of other JHU ice hockey alumni. While this is an incomplete list, we want to keep in touch with all of our alumni. Please <a href="mailto:johnshopkinshockey@gmail.com">reach out</a> to be added to this list.</p>
+		<p>In addition, if you have any information about the history of the club, such as rosters, pictures, season records, statistics, scores, or anything else of note, please pass those on. We would love to celebrate our history as a team with you.</p>
+
+		<div id="alumni-placeholder">
 		</div>
 
 	</div>
@@ -60,9 +58,9 @@
 
 	<script>
 		$(function() {
-			$("#nav-placeholder").load("html/nav.html");
-			$("#roster-placeholder").load("html/roster_table.html");
-			$("#footer-placeholder").load("html/footer.html");
+			$("#nav-placeholder").load("/html/nav.html");
+			$("#alumni-placeholder").load("alumni_list.html");
+			$("#footer-placeholder").load("/html/footer.html");
 		});
 	</script>
 

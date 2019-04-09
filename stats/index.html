@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-table.css" rel="stylesheet">
+	<link href="/css/custom.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/img/icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/img/icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="/img/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/icon/favicon-16x16.png" sizes="16x16">
+
+	<title>Johns Hopkins Hockey - Roster</title>
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<div id="nav-placeholder">
+	</div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<h1 class="my-3">2018-19 Stats</h1>
+
+		<div id="stats-placeholder">
+		</div>
+
+	</div>
+	<br><br>
+
+	<!-- Footer -->
+	<div id="footer-placeholder">
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="/vendor/jquery/jquery.min.js"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/bootstrap-table.js"></script>
+
+	<script>
+		$(function() {
+			$("#nav-placeholder").load("/html/nav.html");
+			$("#stats-placeholder").load("stats_table.html");
+			$("#footer-placeholder").load("/html/footer.html");
+		});
+	</script>
+
+</body>
+
+</html>
