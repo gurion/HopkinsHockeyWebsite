@@ -97,49 +97,81 @@ p {
 
 .container.gallery-container {
   color: #35373a;
+	width: 100%;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin-right: 50px;
+	margin-left: 50px;
   min-height: 100vh;
   padding: 30px 50px;
 }
 
 .gallery-container p.page-description {
   text-align: center;
-  margin: 25px auto;
+  margin: 10px;
   font-size: 18px;
   color: #999;
 }
 
-.gal {
-  -webkit-column-count: 3;
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 3;
-  /* Firefox */
-  column-count: 3;
-}
 
-.gal img {
+.masonry { /* Masonry container */
+  -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  margin: 1.5em;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: .85em;
+}
+.gal-item {
+  display: inline-block;
+  background: #fff;
+  padding: 0;
+  margin: 0 0 1.5em;
   width: 100%;
-  padding: 7px 0;
+  -webkit-transition:1s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 2px 2px 4px 0 #ccc;
 }
+.gal-item img{max-width:100%;}
 
-@media (max-width: 500px) {
-  .gal {
-    -webkit-column-count: 1;
-    /* Chrome, Safari, Opera */
+@media only screen and (max-width: 320px) {
+  .masonry {
     -moz-column-count: 1;
-    /* Firefox */
+    -webkit-column-count: 1;
     column-count: 1;
   }
 }
 
-@media (max-width: 750px) {
-  .gal {
-    -webkit-column-count: 2;
-    /* Chrome, Safari, Opera */
+@media only screen and (min-width: 321px) and (max-width: 768px){
+  .masonry {
     -moz-column-count: 2;
-    /* Firefox */
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
+@media only screen and (min-width: 769px){
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+/* @media only screen and (min-width: 1201px) {
+  .masonry {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+} */
+
 
 .ekko-lightbox-nav-overlay a {
   -ms-flex: 1;
